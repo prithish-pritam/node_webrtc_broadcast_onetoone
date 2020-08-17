@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>WebRTC one-to-one Video Communication</title>
+</head>
+<body>
+    <h1>WebRTC Video Single Video Conference Application</h1>
+    <!-- Application Input or Given Room number -->
+    <div id="selectRoom">
+        <label for="">Type Room number</label>
+        <input type="text" id="roomNumber">
+        <button id="goRoom">Go</button>
+    </div>
+
+    <!-- Video Streaming -->
+    <div id="consultingRoom" style="display: none;">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay muted></video>
+    </div>
+
+    <!-- Required JavaScript File and library -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+    
+</body>
